@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estrutura de Condição</title>
+
+        <script>    
+
+        const n1 = Number(prompt('Digite a nota 1'))
+        const n2 = Number(prompt('Digite a nota 2'))
+        const n3 = Number(prompt('Digite a nota 3'))
+        const n4 = Number(prompt('Digite a nota 4'))
+
+    /* const soma = n1 + n2 + n3 + n4
+        const media = soma / 4
+
+        console.log('A Média final é ' + media) 
+    */
+
+        const media = (n1 + n2 + n3 + n4) / 4
+
+        console.log('A média é ' + media)
+
+    // Estrutura de condição - if (Se) e else (se não)
+
+        if(media >= 7){
+            console.log('Aprovado! :)')
+        } else if(media < 5){                  //else if na mesma linha
+            console.log('Reprovado!!! :(')
+        }else {
+            console.log('Recuperação! Estude mais para passar!')
+        } 
+
+
+    
+     /* Outra forma de escrever a estrutura acima
+        if(media >= 7){
+            console.log('Aprovado! :)')
+        } else {
+
+            if(media < 5){
+            console.log('Reprovado!!! :(')
+        }else {
+            console.log('Recuperação! Estude mais para passar!')
+        }
+    }
+                 
+    */
+
+
+
+        </script> 
+
+
+    </head>
+    <body>
+        
+    </body>
+</html>
