@@ -21,11 +21,22 @@
 
         // while - Existe uma condição e enquanto ela for verdadeira, ela fica em loop
 
+    /*    
         let contador = 1
         while(contador <= 1000){
             console.log (contador)
-            contador = contador + 1  // Essa linha pode ser substituída por contador ++
+            //contador = contador + 1  Essa linha pode ser substituída por contador ++
+            contador = contador++
             
+        }
+    */
+
+        let contador = 1
+        const qtd = prompt('Quantas repetiçõesdeseja?')
+        
+        while(contador <= qtd){
+            console.log (contador)
+            contador++            
 
         }
             
