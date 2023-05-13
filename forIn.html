@@ -9,13 +9,36 @@
       const nota = 1
 
       const pessoa ={
-        nome: 'Orions',
+        nome: 'Mariana',
         telefone: '(21) 2454-2281',
         endereco: 'abc'
       }
 
       const carro = ['Gol', 'Fusca', 'Ka', 'Ferrari']
-    
+
+    //Duas formas de exibir o objeto
+
+  /*console.log(pessoa.nome)
+      console.log(pessoa['nome']) */
+
+     /* for(let atributo in pessoa){            //Dentro do parenteses crio a variável pessoa / antes de pessoa vou criar a variável - atributo
+
+      }
+*/
+  
+/* For in
+      for(let atributo in pessoa){
+        console.log(atributo + " -> " + pessoa[atributo])
+      }
+
+*/
+
+    const carros = ['Gol', 'Fusca', 'Ka', 'Ferrari']
+
+    for(let elemento of carros){
+        console.log(elemento);
+
+    } 
 
         </script>
 

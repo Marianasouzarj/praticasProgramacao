@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleitores</title>
+
+    <script>
+
+        // Entrada (saber a idade e o ano em questão)
+
+            const anoVotacao = Number(prompt('Digite o ano da Eleição'))
+            const anoNascimento = Number(prompt('Digite o ano de nascimento'))
+
+        // Processamento (calcular se tem direito a votar)
+
+            const idade = anoVotacao - anoNascimento
+
+    /*
+            if(idade < 16){
+                console.log('Você não tem idade mínima para votar. Idade: ' + idade + ' anos')
+            } else if(idade >= 16 && idade < 18){
+                console.log('Pode ou não votar, é facultativo! Idade: ' + idade + ' anos')
+            } else if(idade >= 16 && idade < 65){
+                console.log('Você é obrigado a votar! ' + idade + ' anos')
+            } else if(idade >= 65){
+                console.log('Pode ou não votar, é facultativo! Idade: ' + idade + ' anos')
+            }
+    */
+
+            if(idade < 16){
+                console.log('Você não tem idade mínima para votar. Idade: ' + idade + ' anos')
+            } else if(idade >= 18 && idade < 65){
+                console.log('Você é obrigado a votar! ' + idade + ' anos')
+            } else {
+                console.log('Pode ou não votar, é facultativo! Idade: ' + idade + ' anos')
+            }
+            
+
+            
+
+        // } else if (idade == 16 || idade == 17) { usar o operador || significa que uma das duas tem que ser verdadeira, é mais flexível
+
+        // } else if (idade >= 16 && idade < 18){ se usar o operador && significa que eu to juntando 2 operações e as 2 condições tem que ser verdadeira 
+        // Saída (Exibir o retorno ao usuário, se pode ou não votar)
+        
+
+       
+
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
