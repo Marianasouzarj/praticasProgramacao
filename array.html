@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+
+    /*
+        const nome = 'Mariana' //variável simples
+        const idade = 7
+    */
+
+        
+     /* 
+        //variável composta
+        const ano = [1994, 1998, 2002, 2006, 2010, 2014] - tipo inteiro 
+        const carros = ['Gol', 'Fusca', 'Virtus', 'Ka'] tipo string
+        
+        console.log(carros)
+        console.table(carros)
+        console.log(carros[1]) // esse colchete representa o index que quero, no caso 1.. será o Fusca
+    */
+
+
+    
+        const carros = ['Gol', 'Fusca', 'Virtus', 'Ka'] // outra forma de usar
+    
+    /*
+        for(let elemento of carros){
+            console.log(elemento)
+
+        }
+        //ou da forma abaixo
+    
+        for(let  i=0; i<4; i++){
+            console.log(carros[i])
+
+
+        }
+    */
+
+    // Adicionar itens e tirar itens
+        
+        carros.push('Fiesta')   // método do array que adiciono elementos ao final
+        console.table(carros)
+
+        carros.unshift('Palio') //adicionar elementos na 1ª posição
+       
+
+        carros.pop()            //tira elementos do final
+        console.table(carros)
+
+        carros.shift()            //tira elementos do início
+        console.table(carros)
+
+        carros.splice(1, 2)          //serve para excluir, adicionar e editar array. Nesse caso vai no item 1 e exclui 2 itens
+        console.table(carros)
+
+        carros.splice(1, 0, 'Sandeiro', 'Uno', 'Fiesta', 'C3')          // Nesse caso vai no item (posição) 1 não exclui nenhum e adiciona o Sandeiro
+        console.table(carros)
+
+        /* 
+        splice serve para: 
+        
+        Excluir itens a partir de uma posição
+        Ex: carros.splice(2, 3) -> exclui 3 itens a partir da posição 2
+
+        Inserir itens a partir de uma posição
+        carros.splice(3, 0, 'Sandeiro') -> adicionar o item Sandeiro na posição 3
+
+        Alterar itens a partir de uma posição
+        carros.splice(1, 1, 'Sandeiro') -> adicionar o item Sandeiro  na posição 1 após apagar o item que lá estava
+
+        */
+
+        carros.sort()     //coloca em ordem alfabética
+        console.table(carros)
+
+
+
+    
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

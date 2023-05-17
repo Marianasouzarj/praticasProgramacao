@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+
+        const nomes = [
+            'Maria', 
+            'José', 
+            'Mariana', 
+            'Leonardo'
+        ]
+
+        const idades = [
+            18,
+            22,
+            24,
+            30,
+            36
+        ]
+
+        const notas = [         
+            [5, 10, 9, 4],
+            [6, 7, 2, 10],
+            [8, 6, 3, 10,]
+        ]
+
+        const pessoas = [
+            {nome: 'Mariana', telefone:'21 5842548', endereço:'ABC'},
+            {nome: 'Antônio', telefone:'21 5842548', endereço:'ABC'},
+            {nome: 'José', telefone:'21 5842548', endereço:'ABC'},
+            {nome: 'Joanaa', telefone:'21 5842548', endereço:'ABC'},
+
+        ]
+        // Essa array tem 4 objetos (pessoas) cada uma com o seu atributo diferente.
+        //O objeto trata da mesma coisa com atributos diferentes. Cada objeto, carrega dentro de si informações do mesmo objeto
+        //[] -> array e {} -> objetos
+
+        console.table(pessoas)
+        console.table(pessoas[2].nome) // mostrar só o José
+        console.table(pessoas[2]['nome'])
+
+ //Meu array tem 3 arrays e cada array possui 4 colunas 
+
+ /*
+        console.table(nomes)
+        console.table(idades)
+        console.table(notas)
+*/
+
+/*
+        console.table(nomes[0])
+        console.table(idades[3])
+        console.table(notas[1][2]) //Não quero a array toda, apenas 1 elemento
+*/
+
+  
+
+    
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
