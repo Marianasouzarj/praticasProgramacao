@@ -7,14 +7,14 @@
     <title>Arrays</title>
     <script>
 
-        const nomes = [
+        const nomes = [    //tipo string
             'Maria', 
             'José', 
             'Mariana', 
             'Leonardo'
         ]
 
-        const idades = [
+        const idades = [   //array tipo numérico
             18,
             22,
             24,
@@ -22,7 +22,7 @@
             36
         ]
 
-        const notas = [         
+        const notas = [      // nesse caso, cada tipo é uma array. Ex. item 0 é uma array
             [5, 10, 9, 4],
             [6, 7, 2, 10],
             [8, 6, 3, 10,]
@@ -39,7 +39,8 @@
         //O objeto trata da mesma coisa com atributos diferentes. Cada objeto, carrega dentro de si informações do mesmo objeto
         //[] -> array e {} -> objetos
 
-        console.table(pessoas)
+        console.table(pessoas) // mostra as 4 arrays objeto (indice 0,1,2,3)
+        console.table(pessoas[2]) //mostra todo o objeto do indice 2 (nome, tel, end)
         console.table(pessoas[2].nome) // mostrar só o José
         console.table(pessoas[2]['nome'])
 
@@ -56,6 +57,8 @@
         console.table(idades[3])
         console.table(notas[1][2]) //Não quero a array toda, apenas 1 elemento
 */
+
+        //Quando estiver trabalhando com array, eu preciso saber o tipo de dado de cada arraya
 
   
 
